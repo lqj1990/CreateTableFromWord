@@ -1,0 +1,19 @@
+千万注意：建表表格的设计务必保持统一，见table.docx
+
+V2.0.0_20130302alpha
+1.table.docx：数据库设计文档
+2.CreateTables.sql：生成的sql文件
+3.在程序中有4个变量：
+  FLAG = 0                        ：在数据库中建表标志：0表示不建表 1表示建表
+  FILENAME = "\\table.docx"       ：数据库设计文档(请用英文命名）*****（英文命名）
+  CONNECT = "test/test@TEST"      ：数据库连接信息*******************(必须设置）
+  SQLFILENAME = "CreateTables.sql"：产生的sql建表语句**********(可以不用设置）
+
+V2.0.1_20130303alpha
+修改说明：
+添加writetime字段的默认值为sysdate
+修复bug：当数据类型长度超过1位数的时候，只保留一位数据
+
+V2.0.1_20130503alpha
+修改说明：
+指定了程序的默认编码方式
